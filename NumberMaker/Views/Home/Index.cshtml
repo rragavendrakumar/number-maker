@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container" ng-app ng-controller="QuizController">
+    <div class="jumbotron">
+        <h1>NumberMaker</h1>
+
+        <p>NumberMaker will make you awesome with numbers!!!</p>
+    </div>
+    <div class="row">
+        <div class="quiz">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Quiz</div>
+                <div class="quizInternal">
+                    <span class="label label-success">
+                        Correct
+                        <span class="badge">{{correct}}</span>
+                    </span>
+                    &nbsp;
+                    <span class="label label-danger">
+                        Incorrect
+                        <span class="badge">{{incorrect}}</span>
+                    </span>
+                    <p><strong>{{message}}</strong></p>
+                    <div>
+                        <form role="form" ng-submit="submit()">
+                            <strong>{{sum}}</strong>
+                            <input class="inputBox" ng-model="answer"></input>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
