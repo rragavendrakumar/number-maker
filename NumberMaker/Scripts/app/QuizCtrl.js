@@ -58,6 +58,10 @@ function QuizController($scope) {
         builder: sumProvider.createRounding,
         name: "Round to nearest 10",
         selected: true
+    }, {
+        builder: sumProvider.createDecimalRounding,
+        name: "Round to nearest whole number",
+        selected: true
     },
 
     ];
