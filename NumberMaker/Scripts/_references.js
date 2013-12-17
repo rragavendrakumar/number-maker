@@ -261,3 +261,4 @@
 /// <reference path="i18n/angular-locale_zu-za.js" />
 /// <reference path="i18n/angular-locale_zu.js" />
 /// <reference path="app/quizctrl.js" />
+/// <reference path="app/sumprovider.js" />
