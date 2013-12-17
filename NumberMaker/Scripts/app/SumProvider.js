@@ -52,4 +52,17 @@ function SumProvider() {
         var sum = "Half of " + (firstNumber * 2) + " = ";
         return new Sum(sum, correctAnswer);
     };
+
+    this.createRounding = function ($this) {
+        var firstNumber = random(1, 100);
+        var remainder = firstNumber % 10;
+        var correctAnswer;
+        if (remainder >= 5) {
+            correctAnswer = firstNumber + 10 - remainder;
+        } else {
+            correctAnswer = firstNumber - remainder;
+        }
+        var sum = "What is " + firstNumber + " rounded to the nearest 10?";
+        return new Sum(sum, correctAnswer);
+    };
 }

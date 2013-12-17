@@ -54,6 +54,10 @@ function QuizController($scope) {
         builder: sumProvider.createHalf,
         name: "Halves",
         selected: true
+    }, {
+        builder: sumProvider.createRounding,
+        name: "Round to nearest 10",
+        selected: true
     },
 
     ];
