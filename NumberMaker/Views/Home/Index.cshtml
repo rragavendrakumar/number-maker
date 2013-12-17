@@ -9,7 +9,7 @@
         <p>NumberMaker will make you awesome with numbers!!!</p>
     </div>
     <div class="row">
-        <div class="quiz">
+        <div class="col-md-8 quiz">
             <div class="panel panel-warning">
                 <div class="panel-heading">Quiz</div>
                 <div class="quizInternal">
@@ -31,6 +31,16 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">Problem Types</div>
+                <ul class="problemList" >
+                    <li ng-repeat="p in problemTypes">
+                        <input type="checkbox" ng-model="p.selected" /> {{p.name}}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
