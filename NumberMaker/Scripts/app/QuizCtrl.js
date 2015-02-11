@@ -30,6 +30,7 @@ function QuizController($scope) {
             $scope.incorrect += 1;
             $scope.answer = "";
         }
+        $('[ng-model="answer"]').focus();
     };
 
 
