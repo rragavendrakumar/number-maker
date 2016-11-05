@@ -11,4 +11,5 @@ namespace NumberMaker
             ConfigureAuth(app);
         }
     }
+#adding a simple comment
 }
